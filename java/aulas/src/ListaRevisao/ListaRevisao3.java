@@ -20,18 +20,15 @@ public class ListaRevisao3 {
 				valorLido1++;	//valorLido=valorLido+1
 				System.out.println(valorLido1);
 				}
-				else 
-					if(valor1>=26 || valor1 <= 50){
+				else if(valor1>=26 || valor1 <= 50){
 					valorLido2++;
 					System.out.println(valorLido2);
 					}
-					else 
-						if(valor1>=51 || valor1 <= 75){
+					else if(valor1>=51 || valor1 <= 75){
 						valorLido3++;
 						System.out.println(valorLido3);
 						}
-						else 
-							if (valor1>=76 || valor1 <= 100){
+						else if (valor1>=76 || valor1 <= 100){
 							valorLido4++;
 							System.out.println(valorLido4);
 						}
