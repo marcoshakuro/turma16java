@@ -36,8 +36,10 @@ public class ContaCorente {
 					
 					System.out.println("Deseja emitir outro talão de cheque? ");
 					opcao= in.next().toUpperCase().charAt(0);
-					
-					 if (talao > 3) {
+					if(opcao != 'S') {
+						opcao = 'N';
+					}
+					else if (talao > 3) {
 						System.out.println("limite de talões de cheque atingido, ação invalida");
 						opcao = 'N';
 				}
@@ -102,18 +104,6 @@ public class ContaCorente {
 			}
 		}
 
-		System.out.println("Deseja emitir um talão de cheque? ");
-		opcao= in.next().charAt(0);
-		do {
-			if(opcao == 'S') {
-				System.out.print("Digite o valor do talão de cheque :");
-					valorTalao = in.nextDouble();
-					talao = talao + 1;
-					saldo = saldo + valorTalao ;
-					System.out.println("Deseja emitir outro talão de cheque? ");
-					opcao= in.next().charAt(0);
-			}
-		}while(talao <= 3 && opcao == 'S');
 		
 	}
 			
