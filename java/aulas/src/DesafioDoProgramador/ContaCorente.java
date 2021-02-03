@@ -24,24 +24,24 @@ public class ContaCorente {
 		do {
 			if(opcao == 'S' ) {
 				System.out.print("Digite o valor do talão de cheque :");
-					valorTalao = in.nextDouble();
-					if(valorTalao > 0 ) {
-					talao = talao + 1;
-					saldo = saldo + valorTalao ;
-					}
-					else {
-							System.out.println("O Talao de cheque está em branco ou invalidado");
+				valorTalao = in.nextDouble();
+				if(valorTalao > 0 ) {
+				talao = talao + 1;
+				saldo = saldo + valorTalao ;
+				}
+				else {
+						System.out.println("O Talao de cheque está em branco ou invalidado");
 							
-						}
-					
-					System.out.println("Deseja emitir outro talão de cheque? ");
-					opcao= in.next().toUpperCase().charAt(0);
-					if(opcao != 'S') {
-						opcao = 'N';
 					}
-					else if (talao > 3) {
-						System.out.println("limite de talões de cheque atingido, ação invalida");
-						opcao = 'N';
+				
+				System.out.println("Deseja emitir outro talão de cheque? ");
+				opcao= in.next().toUpperCase().charAt(0);
+				if(opcao != 'S') {
+					opcao = 'N';
+				}
+				else if (talao > 3) {
+					System.out.println("limite de talões de cheque atingido, ação invalida");
+					opcao = 'N';
 				}
 			}	
 		}while(opcao == 'S');
