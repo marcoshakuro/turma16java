@@ -1,0 +1,30 @@
+﻿GRUPO 1 - Denise, Jessica, Karen, Marcos, Raphael, Rui
+
+
+Usuário:
+Visando atender de forma simples e intuitiva os nossos clientes, decidimos por campos extremamente importantes, por exemplo:
+
+* Nome: Utilizaremos um varchar, para que o usuário possa preencher seu nome completo
+* E-mail e senha: Esse será a informação necessária para o acesso do cliente ao sistema, a fim de visualizar suas compras, carrinho, pedidos, etc
+
+
+Categoria:
+Definimos alguns pontos principais, no que diz respeito aos produtos que iremos comercializar, pois dessa forma poderíamos focar apenas nas descrições
+que faziam mais sentido. Por exemplo, definir um nome para categoria.
+(Deixamos um ponto como “ativo”, pois ainda precisamos delimitar melhor qual categoria preencher, visando uma melhor usabilidade do banco e código)
+
+* nomeCategoria: através deste ponto, poderemos organizar de forma mais clara os produtos que iremos comercializar, ajudando o cliente na localização
+de um item de forma mais intuitiva.
+* SubCategoria: assim como o item anterior, esse ponto ajudará na navegação do cliente até o produto desejado.
+
+
+
+
+Produto:
+Através da base que temos com programação, buscamos características que fariam sentido em um e-commerce, como por exemplo, preço e estoque (quantidade).
+Dessa forma, poderemos manipular os dados da melhor forma possível.
+
+* nomeProduto: Será o fator principal para o cliente entender do que se trata (além de ser exibido de forma direta no site)
+* Descricao: Uma boa forma de poder diferenciar o produto de forma mais clara
+* Quantidade: atributo extremamente necessário para conseguirmos manipular estoque, permitindo ou não uma venda
+* Preço: Será a forma que cobraremos o cliente, analisaremos valor total de estoque, etc
