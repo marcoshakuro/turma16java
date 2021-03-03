@@ -31,7 +31,12 @@ public class UsuarioController {
 
 	@PostMapping("/cadastrar")
 	public ResponseEntity<Usuario> Post(@RequestBody Usuario usuario){
-		return ResponseEntity.status(HttpStatus.CREATED)
-				.body(usuarioService.CadastrarUsuario(usuario));
+		Optional<Usuario> user = Optional.ofNullable(usuarioService.CadastrarUsuario(usuario));
+		try {
+				return ResponseEntity.ok(user.get());
+		}catch (Exception e) {
+			
+				return ResponseEntity.badRequest().build();
+		}
 	}
 }
