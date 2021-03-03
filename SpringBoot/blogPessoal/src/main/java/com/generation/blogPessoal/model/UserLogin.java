@@ -8,7 +8,7 @@ public class UserLogin {
 	
 	private String senha;
 	
-	private String tokien;
+	private String token;
 
 	public String getNome() {
 		return nome;
@@ -35,11 +35,11 @@ public class UserLogin {
 	}
 
 	public String getTokien() {
-		return tokien;
+		return token;
 	}
 
 	public void setTokien(String tokien) {
-		this.tokien = tokien;
+		this.token = tokien;
 	}
 	
 
