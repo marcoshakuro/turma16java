@@ -46,7 +46,7 @@ public class UsuarioService {
 				
 				user.get().setTokien(authHeader);
 				user.get().setNome(usuario.get().getNome());
-				
+			
 				return user;
 				
 			}
