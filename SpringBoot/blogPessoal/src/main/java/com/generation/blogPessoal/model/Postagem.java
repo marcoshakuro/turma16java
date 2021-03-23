@@ -1,4 +1,4 @@
-package com.generation.blogPessoal.model;
+ package com.generation.blogPessoal.model;
 
 import java.util.Date;
 
@@ -37,6 +37,10 @@ public class Postagem {
 	@ManyToOne
 	@JsonIgnoreProperties("postagens")
 	private Tema tema;
+	
+	@ManyToOne
+	@JsonIgnoreProperties("postagens")
+	private Usuario usuario;
 
 	public Tema getTema() {
 		return tema;
@@ -78,4 +82,13 @@ public class Postagem {
 		this.tema = tema;
 	}
 
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+	
+	
 }
